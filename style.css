@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  background: #202020;
+}
+
+#text {
+  position: absolute;
+  transform: translate(50%);
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  font-style: inherit;
+  font-size: 3rem;
+  margin: 10% 25%;
+  background: linear-gradient(
+    to left,
+    #ff66ff,
+    #ccffff,
+    #ffcccc,
+    #ffcc99,
+    #ffff99
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: animate 20s linear infinite;
+  background-size: 1000%;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
